@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("div[class |= 'myCls']").append(" - This div element has CSS class name starting with myCls");//<div> elements whose class attributes are either equal to myCls or starting with myCls string followed by a hyphen(-)
+            //$("div[class *= 'myCls']").append(" - has a CSS class 'myCls' or a class name starts with 'myCls'");//Selects <div> elements whose class attributes contain myCls
+            //$("[class ~= 'myCls']").append(" - This element has myCls class");//Selects div elements whose class attributes contain myCls, delimited by spaces
+		    $("div[class $= 'Cls']").append(" - This element is selected");//Selects <div> elements whose class attribute value ends with myCls. The comparison is case sensitive.
+		    //$("div[class != 'myCls']").append(" - This element does not have myCls CSS class");
+			//$("div[class ^= 'myCls']").append(" - This element has CSS class name starting with myCls");
+            //$("div:contains('sampletext')").append(" - This element contains sampletext");
+		});
+    </script>
+</head>
+<body>
+    <h1>CSS Selector: element[attribute |= 'value'] </h1>
+    <div class="myCls">
+        Inside First Div
+    </div>
+    <div class="classfordivmyCls">
+        Inside Second Div
+    </div>
+    <div class="myCls-test">
+        Inside Third Div
+    </div>
+    <div class="myClsone">
+        Inside fourth Div
+    </div>
+	<div class="myCls one">
+        Inside fifth Div
+    </div>
+	<div class="test">
+        Inside sixth Div
+    </div>
+	<div class="test">
+        sampletext
+    </div>
+    <span class="myCls">
+         <p>Paragraph 1</p>
+    </span>
+
+</body>
+</html>

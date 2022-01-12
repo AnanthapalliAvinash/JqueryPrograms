@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('p:first-child').append(" - This element is a first child element");
+			$('div p:first-child').append(" - This element is a first child element");
+			$('p:last-child').append(" - This element is a first child element");
+			$('span p:last-child').append(" - This element is a first child element");
+            $('p:nth-child(5)').append(" - This element is 5th child element");
+            $('p:nth-last-child(2)').append(" - This element is 2nd last child element");
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <h1>CSS Selector: element:first-child </h1>
+    <div>
+        <p>Inside div - Paragraph 1</p>
+        <p>Inside div - Paragraph 2</p>
+        <p>Inside div - Paragraph 3</p>
+        <p>Inside div - Paragraph 4</p>
+		<p>Inside div - Paragraph 5</p>
+    </div>
+    <span>
+        <p>Inside span tag - Paragraph 1</p>
+        <p>Inside span tag - Paragraph 2</p>
+        <p>Inside span tag - Paragraph 3</p>
+		<p>Inside span tag - Paragraph 4</p>
+		<p>Inside span tag - Paragraph 5</p>
+    </span>
+</body>
+
+</html>

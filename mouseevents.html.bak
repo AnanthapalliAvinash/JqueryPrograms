@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#para").mouseenter(function(){
+    $(this).slideUp();
+	$( "h2" ).text("Mouse entered on heading").show().fadeOut(2000); 
+	$("p").css("background-color","yellow");
+  });
+   $("p").mouseleave(function(){  
+        $("p").css("background-color", "lightgreen");  
+    }); 
+ $("#head").mouseleave(function(){    
+       $("div").text("Bye Bye... leaving heading").show().fadeOut(2000); 
+    });	   
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#para1").mousedown(function(){
+    $(this).hide();
+  });
+   $("button").mouseup(function(){
+    alert("Mouse button is released over a button");
+  });
+});
+</script>
+</head>
+<body>
+<h1 id="head">Enter this heading.</h1>
+<div>
+</div>
+<h2>jQuery mouseenter event example</h2>
+<p id="para1">These paragraphs will disappear when the mouse button is
+clicked, while the mouse pointer is over these paragraphs.</p>
+<p>This example is an example for mouseenter event</p>
+<p id="para">This paragraph will be hidden with a slideup effect when
+mouse pointer enters on this paragraph.</p>
+
+<button>Button</button>
+</body>
+</html>

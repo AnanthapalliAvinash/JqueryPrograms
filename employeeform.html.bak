@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+	$(document).ready(function(){
+  $("button").click(function(){
+   
+  
+            // On button click, get value
+            // of input control Show alert
+            // message box
+            
+                var inputString = $("#empform").val();
+                document.write((inputString).html());
+            });
+        });
+  
+	</script>
+</head>
+<body>
+<form action="#" id="empform">
+<label>Empid</label>
+<input type="text" name="empid"><br/><br/>
+<label>Empname</label>
+<input type="text" name="empname"><br/><br/>
+<label>Age</label>
+<input type="text" name="age"><br/><br/>
+<label>Salary</label>
+<input type="text" name="salary"><br/><br/>
+<label>Disgnation</label>
+<input type="text" name="disgnation"><br/><br/>
+<button>Submit</button>
+</form>
+	<div id="output"></div>
+</body>
+</html>

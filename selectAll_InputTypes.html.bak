@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(":input");
+            $(":button").css('background-color',"yellow");
+			$(":radio");
+			$(":text").val("xyz");
+			$("div :checkbox").prop("checked","true");
+			$(":image").css("border", "solid 10px red");
+			$(":file").css("border", "solid 1px red");
+			$(":enabled").attr("placeholder", "Enter Value");
+			$(":disabled").attr("placeholder", "disabled");
+			$(":selected").css("background-color","Green")
+			$(":submit").click(function () {
+                alert("Submit button is clicked !");
+            });
+			 $(":password").val("xyz");
+			 $(":reset").click(function () {
+                alert("Reset button is clicked !");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>CSS Selector: :input </h1>
+    <div class="myClstest">
+        Enter text :
+        <input type="text" />
+		<div>
+        <input type="radio" id="bmw" name="bmw" value="BMW">
+        <label for="bmw">BMW</label>
+    </div>
+     <br/>
+    <div>
+        <input type="radio" id="audi" name="audi" value="AUDI">
+        <label for="audi">AUDI</label>
+    </div>
+<br/>
+<br/>
+<p>Select a car:</p>
+    <div>
+        <input type="checkbox" name="test1" value="BMW" checked> BMW<br>
+        <input type="checkbox" name="test2" value="AUDI"> AUDI<br>
+		<input type="radio" id="bmw" name="bmw" value="BMW">
+        <label for="bmw">BMW</label>
+    </div>
+	 <br/>
+        <br/> Click button :
+        <input type="button" value="click" />
+    </div>
+	 <br/>
+	<div>
+	<input type="image" src="https://www.tutorialsteacher.com/assets/images/tutorials/aspnet.jpg" width="300" height="250" />
+    <br/>
+    <br/>
+    <img src="https://www.tutorialsteacher.com/assets/images/tutorials/aspnet.jpg" width="300" height="250" />
+	<br/>
+	 Upload Resume:
+    <input type="file" name="testfile" />
+	 <br/>
+        Username:
+        <input type="text" />
+        <br/>
+        password :
+        <input type="password" />
+		<br/>
+		 email :
+        <input type="email" />
+		Address :
+        <input type="text" disabled />
+		<br/>
+		<select>
+        <option>Red</option>
+        <option selected>Green</option>
+        <option>Orange</option>
+        <option>Yellow</option>
+        <option>Blue</option>
+    </select>
+    </div>
+	<br/>
+	<input type="submit" value="Submit">
+	<br/>
+	<input type="reset" value="Click Reset Button" />
+    
+</body>
+
+</html>
